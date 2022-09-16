@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer bank</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="login-box">
+        <div class="container">
+            <div class="login-box">
+                    <h1 class="heading">Welcome to Pioneer Bank</h1>
+                    <div class="login-form">
+                        <h4>Login</h4>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required>
+                            <button id="login-btn" class="btn btn-success">Enter</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="transaction-box">
+        <div class="container">
+            <div class="tr-box-wrapper">
+                <div class="tr-upper-box">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="box deposit">
+                                <h4>Deposit</h4>
+                                <h1>$ <span id="deposit-total">00</span></h1>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="box withdraw">
+                                <h4>Withdraw</h4>
+                                <h1>$ <span id="withdraw-total">00</span></h1>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="box balance">
+                                <h4>balance</h4>
+                                <h1>$ <span id="balance-total">00</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr-bottom-box">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="tr-box deposit-box">
+                                <h2>Deposit</h2>
+                                <input type="number" id="deposit-amount" placeholder="$ amount you want to deposit">
+                                <button class="btn btn-success" id="deposit-btn">Deposit</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="tr-box withdraw-box">
+                                <h2>Withdraw</h2>
+                                <input type="number" id="withdraw-amount" placeholder="$ amount you want to withdraw">
+                                <button class="btn btn-success" id="withdraw-btn">Withdraw</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="setting.js"></script>
+</body>
+</html>
